@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>generate random case safe Id</title>
+  </head>
+  <body>
+    <button id="generate">generate</button>
+    <input id="out">
+    <script src="convertCaseSafeId.js"></script>
+    <script src="String_random.js"></script>
+    <script>
+      const outInput = document.getElementById('out')
+      const genButton = document.getElementById('generate')
+
+      genButton.addEventListener('click',(ev)=>{
+        out.value = convertToCaseSafeId( String_random(/[\da-zA-Z]{15}/) )
+      })
+    </script>
+  </body>
+</html>
